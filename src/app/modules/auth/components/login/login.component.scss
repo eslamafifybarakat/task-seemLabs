@@ -1,0 +1,67 @@
+.login {
+  .container {
+    width: 70%;
+  }
+
+  .google {
+    border: 2px solid #0000007D;
+
+    .google-img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+
+  .hr-lines {
+    position: relative;
+    text-align: center;
+  }
+
+  .hr-lines:before {
+    content: " ";
+    height: 2px;
+    width: 10rem;
+    background: grey;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+  }
+
+  .hr-lines:after {
+    content: " ";
+    height: 2px;
+    width: 10rem;
+    background: grey;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+  }
+
+
+
+  .form-control {
+    padding: 1.5rem;
+    border: 2px solid #0000007D;
+  }
+
+  .input-group {
+    .form-control {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-left: 2px solid #0000007D;
+      border-right: transparent;
+    }
+
+    .input-group-text {
+      color: gray;
+      border: 2px solid #0000007D;
+      border-left: transparent;
+      border-right: 2px solid #0000007D;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+}

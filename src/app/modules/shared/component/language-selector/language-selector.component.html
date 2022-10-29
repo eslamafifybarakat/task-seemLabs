@@ -1,0 +1,15 @@
+<div class="dropdown-language general-dropdown">
+  <div class="dropdown">
+    <button class="dropdown-toggle btn p-0 d-flex align-items-center " type="button" id="dropdownMenuButton1"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <img class="lang-img"
+        [src]="currentLanguage=='en'?'assets/image/languages/us.svg':'assets/image/languages/eg.svg'" alt="">
+    </button>
+    <ul class="dropdown-menu rounded-25 border-0 shadow p-2" aria-labelledby="dropdownMenuButton1">
+      <li class="nav-item " (click)="tanslationService.changeLang('en')"><a class="nav-link">{{'language.english'
+          |translate}}</a></li>
+      <li class="nav-item " (click)="tanslationService.changeLang('ar')"><a class="nav-link">{{'language.arabic'
+          |translate}}</a></li>
+    </ul>
+  </div>
+</div>

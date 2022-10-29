@@ -1,0 +1,87 @@
+<div class="user-info position-relative general-dropdown" (clickOutside)="collapse == true ? collapse = false : ''">
+  <div class="dropdown">
+    <button class="btn dropdown-toggle p-0" type="button" aria-expanded="false" [attr.aria-expanded]="!collapse"
+      (click)="collapse = !collapse">
+      <div class="user-img-parent">
+        <img [src]='userdata?.photo' onerror="src='assets/image/userprofile.jpg'"
+          class="user-img fit-object-cover rounded-circle w-100 h-100">
+      </div>
+    </button>
+    <ul class="dropdown-menu border-0 shadow p-3 user-info-menu" aria-labelledby="dropdownMenuButton1"
+      [class.show]="collapse">
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fas fa-user me-2"></i> {{"user_info.my_profile"|translate}}
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-easel2-fill me-2" viewBox="0 0 16 16">
+            <path
+              d="M8.447.276a.5.5 0 0 0-.894 0L7.19 1H2.5A1.5 1.5 0 0 0 1 2.5V10h14V2.5A1.5 1.5 0 0 0 13.5 1H8.809L8.447.276Z" />
+            <path fill-rule="evenodd"
+              d="M.5 11a.5.5 0 0 0 0 1h2.86l-.845 3.379a.5.5 0 0 0 .97.242L3.89 14h8.22l.405 1.621a.5.5 0 0 0 .97-.242L12.64 12h2.86a.5.5 0 0 0 0-1H.5Zm3.64 2 .25-1h7.22l.25 1H4.14Z" />
+          </svg>{{"user_info.my_performance"|translate}}
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fas fa-calendar me-2"></i>{{"user_info.rest_schedule"|translate}}
+        </a>
+      </li>
+      <li class="nav-item">
+        <div class="btn-group dropstart w-100">
+          <a class="nav-link d-flex justify-content-between w-100" data-bs-toggle="dropdown" aria-expanded="false">
+            <p><i class="fas fa-clipboard me-2"></i> {{"user_info.daily_tasks.name"|translate}}</p>
+            <i class="fas fa-angle-right scaleX-rtl"></i>
+          </a>
+          <ul class="dropdown-menu border-0 shadow-sm submenu p-2">
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="far fa-circle me-2"></i> {{"user_info.daily_tasks.daily_tasks_submenu.submenu"|translate}}
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="far fa-circle me-2"></i> {{"user_info.daily_tasks.daily_tasks_submenu.submenu"|translate}}
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="far fa-circle me-2"></i> {{"user_info.daily_tasks.daily_tasks_submenu.submenu"|translate}}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fas fa-share me-2"></i>{{"user_info.sharing_samples"|translate}}
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="fas fa-desktop me-2"></i>{{"user_info.control_board"|translate}}
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-box-arrow-in-left me-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z" />
+            <path fill-rule="evenodd"
+              d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+          </svg> {{"user_info.change_bank"|translate}}
+        </a>
+      </li>
+      <li class="nav-item" (click)="signOut()">
+        <a class="nav-link">
+          <i class="fas fa-lock-open me-2"></i> {{"user_info.logout"|translate}}
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</div>

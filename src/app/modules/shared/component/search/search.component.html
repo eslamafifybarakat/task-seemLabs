@@ -1,0 +1,10 @@
+<div class="search position-relative">
+  <div class="">
+    <div class="form-group d-flex position-relative">
+      <i class="fas fa fa-search search-icon px-3 fs-6 position-absolute d-block" (click)="applySearch($event)"></i>
+      <input type="search" class="form-control ps-6" (keyup)="applySearch($event)" [(ngModel)]="searchValue"
+        placeholder="{{searchPlaceholder | translate}}">
+    </div>
+
+  </div>
+</div>

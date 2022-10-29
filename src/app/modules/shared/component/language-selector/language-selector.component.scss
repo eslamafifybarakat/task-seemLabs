@@ -1,0 +1,16 @@
+.dropdown-language {
+  .dropdown-toggle {
+    &::after {
+      display: block !important;
+    }
+
+    &.btn:hover {
+      color: var(--text-white-color);
+    }
+  }
+
+  .lang-img {
+    width: 25px;
+    height: 25px;
+  }
+}

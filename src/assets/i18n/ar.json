@@ -1,0 +1,78 @@
+{
+  "general": {
+    "hotsale": "عرض ساخن",
+    "cat_food": "طعام القطة",
+    "reviews": "آراء",
+    "ingrendients": "المكونات",
+    "desc": "الوصف",
+    "size": "الحجم",
+    "qty": "الكمية",
+    "Add_cart": "أضف للعربة",
+    "sortBy": "ترتيب حسب",
+    "sitename": "سييم لابز",
+    "or": "أو",
+    "watch": "مشاهدة",
+    "back_to_list": "الرجوع للقائمة",
+    "select": "اختر",
+    "language": "اللغة",
+    "search": "ابحث",
+    "light": "فاتح",
+    "dark": "عامق",
+    "ok": "تم",
+    "category": "التصنيف",
+    "price_range": "مرشحات موسعة"
+  },
+  "validations": {
+    "reuired_field": "هذا الحقل مطلوب",
+    "not_valid": "هذه البيانات غير صالحة",
+    "pass_length": "يجب أن يكون كلمة المرور من 8 إلى 20"
+  },
+  "form": {
+    "login_google": "تسجيل الدخول بواسطة جوجل",
+    "login": "تسجيل دخول",
+    "remember": "تذكرنى",
+    "password": "كلمة المرور",
+    "forget_password": "نسيت كلمة المرور؟",
+    "email": "البريد الإلكتروني"
+  },
+  "language": {
+    "english": " اللغة الإنجليزية",
+    "arabic": "اللغة العربية"
+  },
+  "nav": {
+    "sell": "بيع علي shopka",
+    "consumer": "مستهلكى الكترونيات",
+    "cart": "عربتي",
+    "register": "إنشاء حساب"
+  },
+  "user_info": {
+    "my_profile": "الملف الشخصي",
+    "my_performance": "ادائي",
+    "rest_schedule": "جدول الراحات",
+    "daily_tasks": {
+      "name": "المهام اليومية",
+      "daily_tasks_submenu": {
+        "submenu": "قائمه جانبيه"
+      }
+    },
+    "sharing_samples": "مشاركة العينات",
+    "control_board": "لوحة التحكم",
+    "change_bank": "تغيير البنك",
+    "logout": "تسجيل خروج"
+  },
+  "titles": {
+    "home": "الرئيسية",
+    "details": "تفاصيل المنتج",
+    "login": "تسجيل دخول"
+  },
+  "placeholder": {
+    "email": "أدخل البريد الإلكتروني",
+    "password": "أدحل كلمة المرور"
+  },
+  "dummy": {
+    "notifications": {
+      "title_notification": "متى يمكنني الحصول على جهاز مع خدمة zedd ؟",
+      "description_long": " يحتوي النص المربع على نمطين ، بما في ذلك خلفية سوداء وخلفية بيضاء يحتوي النص المربع على نمطين ، بما في ذلك خلفية سوداء وخلفية بيضاء يحتوي النص المربع على نمطين ، بما في ذلك خلفية سوداء وخلفية بيضاء."
+    }
+  }
+}

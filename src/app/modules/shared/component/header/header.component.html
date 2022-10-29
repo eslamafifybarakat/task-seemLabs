@@ -1,0 +1,69 @@
+<div class="header" (clickOutside)="collapsed == true ? collapsed = false :''">
+  <nav class="navbar navbar-expand-lg w-100 py-3">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand m-0 p-0 me-3" href="/home">
+        <img [src]="logo" onerror="this.src='assets/image/Logo.svg'" alt="logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        [attr.aria-expanded]="!collapsed" (click)="collapsed = !collapsed">
+        <i class="fas fa-bars"></i>
+
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent"
+        [class.show]="collapsed">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link color-dark fs-6 px-2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+              {{'nav.sell'|translate}}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color-dark fs-6 px-2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+              {{'nav.register'|translate}}
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-around flex-column-meduim align-items-center">
+          <div class="search-content w-100">
+            <app-search></app-search>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link text-main-color fs-6 px-2" data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show">
+              {{'nav.consumer'|translate}}
+            </a>
+          </li>
+        </div>
+
+
+        <div class="d-flex align-items-center justify-content-center my-xl-0 my-md-3 my-sm-3 my-3">
+          <ng-container *ngIf="isLoggedin">
+            <li class="nav-item p-2">
+              <button type="button" class="btn btn-sm btn-outline-primary position-relative px-3">
+                {{'nav.cart'|translate}}
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  5
+                </span>
+              </button>
+            </li>
+            <li class="nav-item p-2">
+              <app-user-info></app-user-info>
+            </li>
+          </ng-container>
+          <ng-container *ngIf="!isLoggedin">
+            <li class="nav-item p-2">
+              <button type="button" class="btn btn-sm btn-outline-primary px-3" [routerLink]="['/auth/login']">
+                Sign in
+              </button>
+            </li>
+          </ng-container>
+
+          <li class="nav-item p-2">
+            <app-language-selector></app-language-selector>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

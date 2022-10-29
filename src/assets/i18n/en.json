@@ -1,0 +1,97 @@
+{
+  "general": {
+    "hotsale": "HOTSALE",
+    "cat_food": "CAT FOOD",
+    "reviews": "reviews",
+    "ingrendients": "Ingrendients",
+    "desc": "Description",
+    "size": "Size",
+    "qty": "Qty",
+    "Add_cart": "ADD TO CARD",
+    "sortBy": "Sort By",
+    "sitename": "Seem Labs",
+    "or": "OR",
+    "watch": "Watch",
+    "back_to_list": "back to list",
+    "select": "Select",
+    "language": "Language",
+    "search": "Search",
+    "light": "Light",
+    "dark": "Dark",
+    "ok": "OK",
+    "no_item_founded": "no item is founded",
+    "loggin_Success": "Login is successfully",
+    "category": "Category",
+    "price_range": "Expanded Filters"
+  },
+  "validations": {
+    "reuired_field": "This field is reuired",
+    "not_valid": "This data is not vaild",
+    "pass_length": "Password length must be 5–20"
+  },
+  "form": {
+    "login_google": "Login through Google",
+    "login": "Login",
+    "remember": "Remember Me",
+    "password": "Password",
+    "forget_password": "Forget Password ?",
+    "email": "Email"
+  },
+  "language": {
+    "english": "English",
+    "arabic": "Arabic"
+  },
+  "nav": {
+    "sell": "Sell on shopka",
+    "consumer": "Consumer Electronics",
+    "cart": "My Cart",
+    "register": "Register"
+  },
+  "user_info": {
+    "my_profile": "My Profile",
+    "my_performance": "My Performance",
+    "rest_schedule": "Rest Schedule",
+    "daily_tasks": {
+      "name": "Daily Tasks",
+      "daily_tasks_submenu": {
+        "submenu": "submenu"
+      }
+    },
+    "sharing_samples": "Sharing Samples",
+    "control_board": "Control Board",
+    "change_bank": "Change Bank",
+    "logout": "Log Out"
+  },
+  "titles": {
+    "home": "Home",
+    "details": "Product Details",
+    "login": "Login"
+  },
+  "placeholder": {
+    "email": "Enter your email",
+    "password": "Enter your password"
+  },
+  "courses": {
+    "mycourses": "My Courses",
+    "new": "New",
+    "popular": "Popular",
+    "completed": "Completed",
+    "course_info": "Course info",
+    "description": "Description",
+    "what_will_learn": "What will you learn",
+    "course_content": "Course content",
+    "view_lessons": "View lessons",
+    "reading_lessons": "Reading lessons",
+    "training_minute": "Training minute",
+    "tests": "Tests",
+    "beneficiary": "Beneficiary",
+    "supervisors": "For supervisors",
+    "start_course": "Start course"
+  },
+  "dummy": {
+    "notifications": {
+      "title_notification": "When can I get a device with zeed service",
+      "description_long": "Square text has two styles, including a black background and a white background Square text has two styles, including a black background and a white background Square text has two styles, including a black background and a white background."
+    }
+  }
+}

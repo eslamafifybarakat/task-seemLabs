@@ -1,0 +1,31 @@
+.search {
+  .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #EDEDF0;
+    border-radius: 50px;
+    height: 2.5rem;
+    background: #EDEDF0;
+    width: 20rem;
+  }
+
+  .search-icon {
+    top: 50% !important;
+    z-index: 2;
+    transform: translate(0px, -50%) !important;
+  }
+
+  .result-group {
+    border-radius: 0 !important;
+  }
+
+  .close {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+
+  .highlight {
+    color: var(--text-secondary-color);
+  }
+}

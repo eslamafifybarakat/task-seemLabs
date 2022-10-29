@@ -1,0 +1,153 @@
+<ng-container *ngIf="false">
+  <div class="overlay-spinner-loading d-flex justify-content-center align-items-center">
+    <div class="spinner-grow" role="status">
+    </div>
+  </div>
+</ng-container>
+
+<div>
+  <div class="project-details overflow-hidden vh-100">
+    <div class=" row">
+      <div class="col-lg-6 col-md-5 col-sm-12">
+        <div class="image d-flex justify-content-center align-items-center bg-product-color h-100 position-relative">
+          <img class="image-prod fit-object-cover rounded" [src]=" productDetails?.image"
+            onerror="this.src='assets/image/pro-image.png'" alt="">
+          <div class="position-back">
+            <a [routerLink]="['/home']" class="text-back-color">
+              <span>
+                <i class="fa fa-arrow-left scaleX-rtl"></i>
+                <span class="ps-1">
+                  {{'general.back_to_list' | translate}}
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="position-lang">
+            <app-language-selector></app-language-selector>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-7 col-sm-12 position-relative">
+        <div class="prod-info vh-100 overflow-scroll p-5">
+          <span class="hot">
+            {{'general.hotsale' | translate}}
+          </span>
+          <h1 class="main-title my-4">
+            {{productDetails?.title}}
+          </h1>
+          <div class="rate d-flex align-items-center">
+            <span class="pro-name">
+              {{'general.cat_food' | translate}}
+            </span>
+            <div class="vr mx-2 my-1"></div>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="ps-3">
+                4.9 (<span>2130</span> <span>{{'general.reviews' | translate}}</span>)
+              </span>
+            </div>
+          </div>
+          <div class="desc">
+            <h1 class="desc-title my-4">
+              {{'general.desc' | translate}}:
+            </h1>
+            <ul class="ms-3">
+              <li>
+                Makanan yang lengkap dan seimbang, dengan 41 nutrisi penting.
+              </li>
+              <li>
+                Mengandung antioksidan (vitamin E dan selenium) untuk sistem kekebalan tubuh yang sehat.
+              </li>
+              <li>
+                Mengandung serat untuk memperlancar pencernaan dan meningkatkan kesehatan usus.
+              </li>
+              <li>
+                Mengandung serat untuk memperlancar pencernaan dan meningkatkan kesehatan usus.
+              </li>
+            </ul>
+          </div>
+          <div class="image d-flex align-items-center my-4 gap-3">
+            <img class="image-list active-image" [src]=" productDetails?.image"
+              onerror="this.src='assets/image/pro-image.png'" alt="">
+            <img class="image-list" [src]=" productDetails?.image" onerror="this.src='assets/image/pro-image.png'"
+              alt="">
+            <img class="image-list" [src]=" productDetails?.image" onerror="this.src='assets/image/pro-image.png'"
+              alt="">
+          </div>
+          <div class="size">
+            <span class="title-size">
+              {{'general.size' | translate}}:
+            </span>
+            <div class="sizes d-flex align-items-center my-3 gap-3">
+              <span class="size-item active-size">1.5 kg</span>
+              <span class="size-item">1 kg</span>
+              <span class="size-item">500 gr</span>
+              <span class="size-item">250 gr</span>
+            </div>
+          </div>
+          <div class="Ingrendients">
+            <h1 class="desc-title mb-3">
+              {{'general.ingrendients' | translate}}:
+            </h1>
+            <ul class="ms-3">
+              <li>
+                Nutrisi
+              </li>
+              <li>
+                Vitamin E
+              </li>
+              <li>
+                Protein
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="count position-count">
+      <div class="d-flex justify-content-between align-items-center flex-column-meduim gap-2">
+        <div class="image d-flex justify-content-center align-items-center gap-1">
+          <img class=" image-count" [src]=" productDetails?.image" onerror="this.src='assets/image/pro-image.png'"
+            width="40" height="40" alt="">
+          <span class="d-flex flex-column">
+            <span class="count-title">
+              {{productDetails?.title}}
+            </span>
+            <span class="count-name">
+              {{'general.cat_food' | translate}}
+            </span>
+          </span>
+        </div>
+        <div class="count d-flex justify-content-center align-items-center gap-1">
+          <span class="qty">{{'general.qty' | translate}}:</span>
+          <span class="d-flex mx-2 justify-content-center align-items-center gap-3">
+            <span class="minus rounded">
+              <a class="d-flex justify-content-center align-items-center p-1" (click)="count('down')">
+                <i class="fa fa-minus"></i>
+              </a>
+            </span>
+            <span class="number d-flex justify-content-center align-items-center">
+              <span class="user-select-none">
+                {{counter}}
+              </span>
+            </span>
+            <span class="postive rounded">
+              <a class="d-flex justify-content-center align-items-center p-1" (click)="count('up')">
+                <i class="fa fa-plus"></i>
+              </a>
+            </span>
+          </span>
+        </div>
+        <button class="btn btn-sm">
+          {{'general.Add_cart' | translate}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
